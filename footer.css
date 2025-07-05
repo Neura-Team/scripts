@@ -1,7 +1,69 @@
-footer.custom-footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  font-family: Arial, sans-serif;
+footer.neura-custom-footer {
+    position: relative; /* creates stacking context */
+    isolation: isolate; /* forces this element to create a new stacking context */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    /*width: max-content;*/
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+
+    z-index: 2147483647;
+}
+
+footer.neura-custom-footer a {
+    color: white;
+    text-decoration: none;
+    /*border: 2px dashed transparent;*/
+    border-radius: 12px;
+    margin: 5px;
+    /*background-color: black;*/
+}
+
+footer.neura-custom-footer a:hover {
+    /*border: 2px dashed black;*/
+}
+
+footer.neura-custom-footer a p {
+    color: white;
+    padding: 6px;
+    /*margin: .25rem;*/
+    margin: 0;
+    border-radius: 12px;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 1px;
+}
+
+footer.neura-custom-footer a p span {
+    padding: 0 2px;
+
+    /*height: 20px;*/
+    /*width: 20px;*/
+}
+
+footer.neura-custom-footer a p .hidden {
+    width: 0;
+    opacity: 0;
+    transition: opacity .5s, width .5s;
+    overflow: hidden;
+}
+
+footer.neura-custom-footer a:hover p .hidden {
+    opacity: 1;
+    width: 30px;
+}
+
+footer.neura-custom-footer a img {
+    height: 20px;
+    width: 20px;
 }

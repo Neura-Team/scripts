@@ -14,6 +14,7 @@ footer.neura-custom-footer {
     background-color: transparent;
 
     z-index: 2147483647;
+    pointer-events: none;
 }
 
 footer.neura-custom-footer a {
@@ -23,6 +24,7 @@ footer.neura-custom-footer a {
     border-radius: 12px;
     margin: 5px;
     /*background-color: black;*/
+    pointer-events: auto;
 }
 
 footer.neura-custom-footer a:hover {

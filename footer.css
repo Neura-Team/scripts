@@ -1,5 +1,8 @@
 footer.neura-custom-footer {
-    position: relative; /* creates stacking context */
+    /* position: relative; /* creates stacking context * */
+    position: absolute;
+    right: 0;
+    bottom: 0;
     isolation: isolate; /* forces this element to create a new stacking context */
 
     display: flex;

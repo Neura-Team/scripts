@@ -50,6 +50,12 @@ footer.neura-custom-footer a p {
     letter-spacing: 1px;
 }
 
+footer.neura-custom-footer a p {
+    background-color: var(--neura-custom-footer-color, black);
+    opacity: var(--neura-custom-footer-opacity, 1);
+    border: var(--neura-custom-footer-border, none);
+}
+
 footer.neura-custom-footer a p span {
     padding: 0 2px;
 
